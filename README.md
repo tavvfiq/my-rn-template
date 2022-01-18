@@ -12,3 +12,5 @@ React Native template with TypeScript
 - react-native-svg
 - react-native-mkkv
 - axios
+
+using MVVM architecture
