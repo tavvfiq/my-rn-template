@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { Pressable, StyleSheet } from 'react-native';
-import { Navigation } from 'react-native-navigation';
 import Animated, {
   useAnimatedStyle,
   useSharedValue,
@@ -58,10 +57,9 @@ const ModalComponent = ({
   }, [show]);
 
   const dismissModal = function () {
-    dispatch(CLOSE_MODAL_EVENT);
     show.value = false;
     setTimeout(() => {
-      Navigation.dismissModal(componentId);
+      dispatch(CLOSE_MODAL_EVENT, componentId);
     }, MODAL_SHOW_ANIMATION_DURATION);
   };
 

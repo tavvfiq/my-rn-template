@@ -29,8 +29,9 @@ export default class Modal {
       // registering modal
       Navigation.registerComponent(this._modalName, () => ModalComponent);
       this._registered = true;
-      listen(CLOSE_MODAL_EVENT, () => {
+      listen(CLOSE_MODAL_EVENT, (componentId: string) => {
         this._modalOpened = false;
+        Navigation.dismissModal(componentId);
       });
     }
   }
@@ -58,10 +59,10 @@ export default class Modal {
         options: {
           animations: {
             showModal: {
-              enabled: true,
+              enabled: false,
             },
             dismissModal: {
-              enabled: true,
+              enabled: false,
             },
           },
           layout: {

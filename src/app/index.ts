@@ -3,8 +3,12 @@ import { Navigation } from 'react-native-navigation';
 import { SlideEnter, SlideExit } from './navigation/animation';
 import { setRootStack } from './navigation/roots';
 import { AppScreens } from './navigation/screens';
+import Modal from '~core/ui/modal/Modal';
+import Overlay from '~core/ui/overlay/Overlay';
 
 function registerScreens() {
+  Modal.init();
+  Overlay.init();
   RNNBottomSheet.init();
   AppScreens.forEach(({ name, component }) => {
     Navigation.registerComponent(name, () => component);
