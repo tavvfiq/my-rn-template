@@ -19,4 +19,4 @@ using Model-View-View Model (MVVM) pattern. with separation of concern.
 
 
 ## Testing
-using jest as a unit testing library
+using @testing-library/react-native and jest
