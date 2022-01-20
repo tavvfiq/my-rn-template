@@ -1,4 +1,4 @@
 module.exports = {
-  placeholderName: 'mytemplate',
+  placeholderName: 'myTemplate',
   templateDir: '.',
 }

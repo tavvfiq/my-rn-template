@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "mytemplate.app"
-               BlueprintName = "mytemplate"
-               ReferencedContainer = "container:mytemplate.xcodeproj">
+               BuildableName = "myTemplate.app"
+               BlueprintName = "myTemplate"
+               ReferencedContainer = "container:myTemplate.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
                BuildableName = "myTemplateTests.xctest"
                BlueprintName = "myTemplateTests"
-               ReferencedContainer = "container:mytemplate.xcodeproj">
+               ReferencedContainer = "container:myTemplate.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "mytemplate.app"
-            BlueprintName = "mytemplate"
-            ReferencedContainer = "container:mytemplate.xcodeproj">
+            BuildableName = "myTemplate.app"
+            BlueprintName = "myTemplate"
+            ReferencedContainer = "container:myTemplate.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "mytemplate.app"
-            BlueprintName = "mytemplate"
-            ReferencedContainer = "container:mytemplate.xcodeproj">
+            BuildableName = "myTemplate.app"
+            BlueprintName = "myTemplate"
+            ReferencedContainer = "container:myTemplate.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
