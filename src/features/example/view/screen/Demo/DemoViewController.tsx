@@ -6,16 +6,16 @@ import {
   NavigationFunctionComponent,
 } from 'react-native-navigation';
 import Screen from '~common/types/screen';
-import UserList from '~features/example2/ui/screen/User/UserListViewController';
+import UserList from '~features/example2/view/screen/User/UserListViewController';
 import CounterStoreSingleton from '~features/example/data/store/counterStore';
 import CounterViewModel from '~features/example/viewmodel/counterViewModel';
 import CounterView from './DemoView';
 import images from '~features/example/assets/images';
-import { Modal } from '~core/ui/modal';
+import { Modal } from '~core/view/modal';
 import { View, Text } from 'react-native';
-import Overlay from '~core/ui/overlay/Overlay';
+import Overlay from '~core/view/overlay/Overlay';
 import { RNNBottomSheet } from 'react-native-navigation-bottom-sheet';
-import { PressableOpacity } from '~common/ui/component/PressableOpacity';
+import { PressableOpacity } from '~common/view/component/PressableOpacity';
 
 const DemoViewController: NavigationFunctionComponent = observer(
   ({ componentId }) => {

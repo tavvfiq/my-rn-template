@@ -3,8 +3,8 @@ import { Navigation } from 'react-native-navigation';
 import { SlideInLeft, SlideOutRight } from '../core/navigation/animation';
 import { setRootStack } from './navigation/roots';
 import { AppScreens } from './navigation/screens';
-import Modal from '~core/ui/modal/Modal';
-import Overlay from '~core/ui/overlay/Overlay';
+import Modal from '~core/view/modal/Modal';
+import Overlay from '~core/view/overlay/Overlay';
 
 function registerScreens() {
   Modal.init();

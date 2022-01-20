@@ -1,6 +1,6 @@
-### React Native Template
+# React Native Template
 React Native template with TypeScript
-#### preinstalled library:
+## preinstalled library:
 - react-native-gesture-handler
 - react-native-reanimated
 - react-native-navigation
@@ -12,5 +12,11 @@ React Native template with TypeScript
 - react-native-svg
 - react-native-mkkv
 - axios
+- jest
 
-using MVVM architecture
+## Architecture
+using Model-View-View Model (MVVM) pattern. with separation of concern.
+
+
+## Testing
+using jest as a unit testing library

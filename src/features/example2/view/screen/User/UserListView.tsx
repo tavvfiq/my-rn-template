@@ -1,7 +1,6 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-import { ScrollView } from 'react-native-gesture-handler';
-import Overlay from '~core/ui/overlay/Overlay';
+import { ScrollView, View, Text, StyleSheet } from 'react-native';
+import Overlay from '~core/view/overlay/Overlay';
 import User from '~features/example2/data/domain/user';
 import ArticlePlaceholder from '../../component/ArticlePlaceholder';
 
@@ -12,21 +11,6 @@ interface Props {
 }
 
 const UserListView = ({ users, error, loading }: Props) => {
-  if (error) {
-    Overlay.open({
-      renderContent: () => (
-        <View
-          style={{
-            width: '100%',
-            backgroundColor: 'blue',
-            height: 100,
-            elevation: 200,
-          }}>
-          <Text>error bos</Text>
-        </View>
-      ),
-    });
-  }
   return (
     <ScrollView contentContainerStyle={styles.container}>
       {loading && <ArticlePlaceholder />}

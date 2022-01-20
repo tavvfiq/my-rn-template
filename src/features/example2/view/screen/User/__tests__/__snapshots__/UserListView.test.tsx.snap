@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserListView renders correctly 1`] = `
+<RCTScrollView
+  contentContainerStyle={
+    Object {
+      "color": "blue",
+      "flexGrow": 1,
+    }
+  }
+>
+  <View />
+</RCTScrollView>
+`;

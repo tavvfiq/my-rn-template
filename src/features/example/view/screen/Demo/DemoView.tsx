@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import { PressableOpacity } from '~common/ui/component/PressableOpacity';
+import { PressableOpacity } from '~common/view/component/PressableOpacity';
 
 interface Props {
   counter: number;
