@@ -1,4 +1,4 @@
-import { AxiosInstance, AxiosRequestConfig, AxiosResponse } from 'axios';
+import axios, { AxiosInstance, AxiosRequestConfig, AxiosResponse } from 'axios';
 
 const CONTENT_TYPE_URLENCODED = 'application/x-www-form-urlencoded';
 const CONTENT_TYPE_JSON = 'application/json';
@@ -13,8 +13,14 @@ declare module 'axios' {
 
 class HttpTransport<T extends object> {
   instance: AxiosInstance;
-  constructor(_instance: AxiosInstance) {
-    this.instance = _instance;
+  constructor(baseURL?: string) {
+    if (baseURL) {
+      this.instance = axios.create({
+        baseURL,
+      });
+    } else {
+      this.instance = axios.create();
+    }
     this._initializeResponseInterceptor();
   }
 
@@ -29,7 +35,7 @@ class HttpTransport<T extends object> {
     return data;
   };
 
-  protected _handleError = (error: any) => Promise.reject(error.response);
+  private _handleError = (error: any) => Promise.reject(error.response);
 
   protected get = (
     url: string,

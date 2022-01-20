@@ -69,7 +69,6 @@ const OverlayComponent = ({
 
   useEffect(() => {
     const _listener = listen(DISMISS_ACTIVE_OVERLAY, (overlayId: string) => {
-      console.log(overlayId);
       if (overlayId === componentId) {
         dismissOverlay();
       }

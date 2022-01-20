@@ -7,13 +7,19 @@ interface Props {
   increase: () => void;
   decrease: () => void;
   navigateToCounter2: () => void;
+  showOverlay: () => void;
+  showModal: () => void;
+  showBottomsheet: () => void;
 }
 
-const CounterView = ({
+const DemoView = ({
   counter,
   increase,
   decrease,
   navigateToCounter2,
+  showOverlay,
+  showModal,
+  showBottomsheet,
 }: Props) => {
   return (
     <View style={styles.container}>
@@ -26,8 +32,24 @@ const CounterView = ({
           <Text style={styles.text}>Decrease</Text>
         </PressableOpacity>
       </View>
-      <PressableOpacity style={styles.button2} onPress={navigateToCounter2}>
-        <Text style={styles.text}>Go To Counter 2</Text>
+      <View style={styles.buttonContainer}>
+        <PressableOpacity style={styles.button} onPress={showOverlay}>
+          <Text style={styles.text}>show notification</Text>
+        </PressableOpacity>
+        <PressableOpacity style={styles.button} onPress={showOverlay}>
+          <Text style={styles.text}>show notification</Text>
+        </PressableOpacity>
+      </View>
+      <View style={styles.buttonContainer}>
+        <PressableOpacity style={styles.button2} onPress={showModal}>
+          <Text style={styles.text}>show modal</Text>
+        </PressableOpacity>
+        <PressableOpacity style={styles.button2} onPress={showBottomsheet}>
+          <Text style={styles.text}>show bottomsheet</Text>
+        </PressableOpacity>
+      </View>
+      <PressableOpacity style={styles.button3} onPress={navigateToCounter2}>
+        <Text style={styles.text}>go to counter 2</Text>
       </PressableOpacity>
     </View>
   );
@@ -56,7 +78,15 @@ const styles = StyleSheet.create({
   },
   button2: {
     backgroundColor: 'yellow',
-    width: 200,
+    flexGrow: 1,
+    height: 100,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  button3: {
+    backgroundColor: 'green',
+    flexGrow: 1,
     height: 100,
     flexDirection: 'row',
     justifyContent: 'center',
@@ -64,4 +94,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default CounterView;
+export default DemoView;

@@ -17,7 +17,7 @@ export interface ModalComponentProps {
    * @type {Function}
    * @return {React.ReactNode}
    */
-  renderContent?: () => React.ReactNode;
+  renderContent?: (closeThisModal: () => void) => React.ReactNode;
   /**
    * opacity of the backdrop
    */
@@ -36,7 +36,7 @@ const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
 
 const ModalComponent = ({
   renderContent,
-  backdropOpacity = 0.4,
+  backdropOpacity = 0.7,
   dimissable,
   componentId,
 }: Props) => {
@@ -73,7 +73,7 @@ const ModalComponent = ({
     <AnimatedPressable
       onPress={backdropOnPress}
       style={[styles.container, style]}>
-      {renderContent && renderContent()}
+      {renderContent && renderContent(dismissModal)}
     </AnimatedPressable>
   );
 };

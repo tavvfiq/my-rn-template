@@ -5,10 +5,10 @@ interface Props {
   renderContent?: () => React.ReactNode;
 }
 
-const SnackBar = ({ renderContent } : Props) => {
+const SnackBar = ({}: Props) => {
   return (
     <View>
-      <Text></Text>
+      <Text />
     </View>
   );
 };

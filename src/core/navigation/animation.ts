@@ -1,17 +1,19 @@
 import { ViewAnimationOptions } from 'react-native-navigation';
 
-export const SlideEnter: ViewAnimationOptions = {
+export const TRANSITION_ANIMATION_DURATION = 300;
+
+export const SlideInLeft: ViewAnimationOptions = {
   translationX: {
     from: require('react-native').Dimensions.get('window').width,
     to: 0,
-    duration: 300,
+    duration: TRANSITION_ANIMATION_DURATION,
   },
 };
 
-export const SlideExit: ViewAnimationOptions = {
+export const SlideOutRight: ViewAnimationOptions = {
   translationX: {
     from: 0,
     to: require('react-native').Dimensions.get('window').width,
-    duration: 300,
+    duration: TRANSITION_ANIMATION_DURATION,
   },
 };

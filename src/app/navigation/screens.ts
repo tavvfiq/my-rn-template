@@ -1,6 +1,6 @@
 import Screen from '../../common/types/screen';
-import Counter from '../../features/example/ui/screen/Counter/CounterViewController';
-import Counter2 from '../../features/example2/ui/screen/Counter2/CounterViewController';
+import Demo from '../../features/example/ui/screen/Demo/DemoViewController';
+import UserList from '../../features/example2/ui/screen/User/UserListViewController';
 
 // add your screen here
-export const AppScreens: Screen[] = [Counter2, Counter];
+export const AppScreens: Screen[] = [UserList, Demo];

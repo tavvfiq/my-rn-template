@@ -1,6 +1,6 @@
 import { RNNBottomSheet } from 'react-native-navigation-bottom-sheet';
 import { Navigation } from 'react-native-navigation';
-import { SlideEnter, SlideExit } from './navigation/animation';
+import { SlideInLeft, SlideOutRight } from '../core/navigation/animation';
 import { setRootStack } from './navigation/roots';
 import { AppScreens } from './navigation/screens';
 import Modal from '~core/ui/modal/Modal';
@@ -19,10 +19,10 @@ function setDefaultOption() {
   Navigation.setDefaultOptions({
     animations: {
       push: {
-        content: SlideEnter,
+        content: SlideInLeft,
       },
       pop: {
-        content: SlideExit,
+        content: SlideOutRight,
       },
       setRoot: {
         waitForRender: true,
