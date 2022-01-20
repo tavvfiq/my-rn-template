@@ -26,7 +26,7 @@
     "react-native-navigation-bottom-sheet": "^1.4.0",
     "react-native-navigation-hooks": "^6.3.0",
     "react-native-reanimated": "^2.3.1",
-    "react-native-skeleton-placeholder": "^5.0.0",
+    "react-native-skeleton-placeholder-2": "^5.0.1-reanimated2",
     "react-native-svg": "^12.1.1",
     "reflect-metadata": "^0.1.13"
   },

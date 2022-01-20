@@ -5,7 +5,7 @@ import {
   Navigation,
   NavigationFunctionComponent,
 } from 'react-native-navigation';
-import Screen from '~common/types/screen';
+import Screen from '~common/interface/screen';
 import UserList from '~features/example2/view/screen/User/UserListViewController';
 import CounterStoreSingleton from '~features/example/data/store/counterStore';
 import CounterViewModel from '~features/example/viewmodel/counterViewModel';

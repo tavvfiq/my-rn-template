@@ -2,7 +2,7 @@ import { observer } from 'mobx-react-lite';
 import React, { useRef } from 'react';
 import { NavigationFunctionComponent } from 'react-native-navigation';
 import { withNavigationProvider } from 'react-native-navigation-hooks/dist';
-import Screen from '~common/types/screen';
+import Screen from '~common/interface/screen';
 import images from '~features/example2/assets/images';
 import UserClientApi from '~features/example2/data/repository/api/userClient';
 import UserRepository from '~features/example2/data/repository/userRepositoryImpl';
