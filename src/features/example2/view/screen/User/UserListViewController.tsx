@@ -11,17 +11,17 @@ import useFetchOnMount from '~core/hooks/useFetchOnMount';
 import UserListView from './UserListView';
 
 const UserListViewController: NavigationFunctionComponent = observer(({}) => {
-  const vm = useRef(new UserViewModel(new UserRepository(new UserClientApi())));
+  const vm = useRef(new UserViewModel(new UserRepository(new UserClientApi()))).current;
 
   useFetchOnMount(() => {
-    vm.current.getUser();
+    vm.getUser();
   });
 
   return (
     <UserListView
-      users={vm.current.user}
-      loading={vm.current.loading}
-      error={vm.current.error}
+      users={vm.user}
+      loading={vm.loading}
+      error={vm.error}
     />
   );
 });
